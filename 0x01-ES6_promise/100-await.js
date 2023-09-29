@@ -1,4 +1,4 @@
-import { uploadPhoto, createUser } from "./utils.js";
+import { uploadPhoto, createUser } from './utils';
 
 export default async function asyncUploadUser() {
   try {
@@ -12,7 +12,7 @@ export default async function asyncUploadUser() {
       user: userResponse,
     };
   } catch (error) {
-    console.error("One of the async functions failed:", error);
+    console.error('One of the async functions failed:', error);
     return {
       photo: null,
       user: null,
