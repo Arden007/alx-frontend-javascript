@@ -1,8 +1,6 @@
-// Implement a method named displayFullCurrency that will return the attributes in the following format name (code).
-
 export default class Currency {
   constructor(code, name) {
-    (this._code = code), (this._name = name);
+    this._code = code,this._name = name
   }
 
   get code() {
@@ -21,7 +19,7 @@ export default class Currency {
     this._name = value;
   }
 
-  displayFullCurrency(){
-    return (`${this._name} (${this._code})`)
+  displayFullCurrency() {
+    return (`${this._name} (${this._code})`);
   }
 }
