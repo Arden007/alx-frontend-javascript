@@ -7,8 +7,8 @@ export default function signUpUser(firstName, lastName) {
       lastName !== ''
     ) {
       resolve({
-        firstName: firstName,
-        lastName: lastName,
+        firstName,
+        lastName,
       });
     } else {
       reject(
