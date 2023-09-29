@@ -6,10 +6,10 @@ export default function handleProfileSignup() {
   Promise.all(promises)
     .then((results) => {
       const [photoResponse, userResponse] = results;
-      console.log(
-        photoResponse.body,
-        userResponse.firstName,
-        userResponse.lastName,
-      )
+      return {
+        photoBody: photoResponse.body,
+        firstName: userResponse.firstName,
+        lastName: userResponse.lastName,
+      };
     });
 }
