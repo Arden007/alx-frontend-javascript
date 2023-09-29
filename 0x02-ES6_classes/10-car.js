@@ -1,4 +1,4 @@
-const cloneData = Symbol("cloneData");
+const cloneData = Symbol('cloneData');
 
 export default class Car {
   constructor(brand, motor, color) {
@@ -24,7 +24,7 @@ export default class Car {
     const clonedCar = new this.constructor(
       this._brand,
       this._motor,
-      this._color
+      this._color,
     );
     clonedCar[cloneData] = {};
     return clonedCar;
