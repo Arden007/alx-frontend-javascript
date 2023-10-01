@@ -11,9 +11,9 @@ export default function createIteratorObject(report) {
 
       if (employeeIndex < employees.length) {
         yield employees[employeeIndex];
-        employeeIndex++;
+        employeeIndex+=1;
       } else {
-        departmentIndex++;
+        departmentIndex+=1;
         employeeIndex = 0;
       }
     }
