@@ -1,7 +1,7 @@
 export default function cleanSet(Set, startString) {
-    if (startString == ''){
-        return ''
-    }
+  if (startString === '') {
+    return '';
+  }
   const cleanedValues = [];
 
   for (const value of Set) {
