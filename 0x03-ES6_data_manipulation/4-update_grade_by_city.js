@@ -1,6 +1,6 @@
 export default function updateStudentGradeByCity(studentList, city, newGrades) {
   const studentsInCity = studentList.filter(
-    (student) => student.location === city
+    (student) => student.location === city,
   );
 
   const updatedStudents = studentsInCity.map((student) => {
@@ -11,13 +11,12 @@ export default function updateStudentGradeByCity(studentList, city, newGrades) {
         ...student,
         grade: gradeObj.grade,
       };
-    } else {
-      return {
+    }
+    return {
         ...student,
         grade: 'N/A',
       };
-    }
   });
 
   return updatedStudents;
-};
+}
