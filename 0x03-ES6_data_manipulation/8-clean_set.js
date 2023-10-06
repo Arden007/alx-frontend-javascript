@@ -1,11 +1,10 @@
-export default function cleanSet(set, startString) {
+export default function cleanSet(Set, startString) {
   if (startString === '') {
-    return [...set].join('-');
+    return '';
   }
-
   const cleanedValues = [];
 
-  for (const value of set) {
+  for (const value of Set) {
     if (value.startsWith(startString)) {
       cleanedValues.push(value.substring(startString.length));
     }
